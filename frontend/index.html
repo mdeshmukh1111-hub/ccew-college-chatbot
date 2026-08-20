@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CCEW AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <header class="chat-header">
+
+            <div class="bot-icon">
+                🤖
+            </div>
+
+            <div>
+                <h1>CCEW AI Assistant</h1>
+                <p>College Information Assistant</p>
+            </div>
+
+        </header>
+
+
+        <!-- Chat Messages -->
+        <main class="chat-box" id="chatBox">
+
+            <div class="message bot-message">
+
+                <div class="message-icon">
+                    🤖
+                </div>
+
+                <div class="message-content">
+
+                    <p>
+                        Hello! 👋
+                    </p>
+
+                    <p>
+                        I'm the CCEW College Assistant.
+                        How can I help you today?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Questions -->
+
+            <div class="quick-questions">
+
+                <button onclick="askQuestion('What courses are available?')">
+                    Courses
+                </button>
+
+                <button onclick="askQuestion('Tell me about admissions')">
+                    Admissions
+                </button>
+
+                <button onclick="askQuestion('Tell me about placements')">
+                    Placements
+                </button>
+
+                <button onclick="askQuestion('What facilities are available?')">
+                    Facilities
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- Input Area -->
+
+        <footer class="chat-input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask something about CCEW..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()" id="sendButton">
+                ➤
+            </button>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
